@@ -1,24 +1,40 @@
 var map;
 
 function averageOzonePollution(data){
-  //var stationtotal = new Array();
-  //var stationnbdays = new Array();
+  var stationtotal = new Array();
+  var stationnbdays = new Array();
+  var keys = Object.keys(data[0]);
   for(var i=0;i<data.length;i++){
     //console.log(data[i]);
-    var keys = Object.keys(data[0]);
+
+    console.log(keys);
     for(var j=0;j<keys.length;j++){
-    /*  if(j==0){
-        stationtotal[keys[j]]=0;
-        stationnbdays[keys[j]]=0;
-      }*/
-      console.log(data[i][keys[j]]);
-    /*  if((keys[j]!="date")&&(data[i][keys[j]]!="No data")&&(data[i][keys[j]]!="")&&(data[i][keys[j]]!=undefined)){
+      if(j==0){
+        console.log("Condition"+keys[i]);
+        stationtotal[keys[i]]=0;
+        stationnbdays[keys[i]]=0;
+      }
+     if((keys[j]!="Date")&&(data[i][keys[j]]!="No data")&&(data[i][keys[j]]!="")&&(data[i][keys[j]]!=undefined)){
         stationtotal[keys[j]] += parseInt(data[i][keys[j]]);
         stationnbdays[keys[j]] += 1;
-      }*/
+      }
     }
   }
-  console.log(stationtotal);
+
+  var results = new Array();
+
+  for(var j=0;j<keys.length;j++){
+    console.log(keys[j]);
+
+      results[keys[j]]=stationtotal[keys[j]]/stationnbdays[keys[j]];
+    }
+
+    return results;
+}
+
+function createOnMap(data){
+  var monthAvgData = averageOzonePollution(data);
+  
 }
 
 function displayOnMap(){
