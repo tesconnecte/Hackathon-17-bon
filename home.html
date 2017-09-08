@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+		  <title>Hackathon 2017</title>
+		  <link rel="stylesheet" type="text/css" href="./style/home.css" />
+      <h1>2005 North-east England ozone pollution evolution</h1>
+
+    </head>
+    <body>
+      <div id="map">
+      </div>
+      <div id="controls">
+        <form>
+            <!--<div class="input_data">Select a year :
+              <select>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+              </select>
+            </div>-->
+
+            <div class="input_data">Select a month :
+              <select>
+                <option value="january">january</option>
+                <option value="february">february</option>
+                <option value="march">march</option>
+                <option value="april">april</option>
+                <option value="may">may</option>
+                <option value="june">june</option>
+                <option value="july">july</option>
+                <option value="august">august</option>
+                <option value="september">september</option>
+                <option value="october">october</option>
+                <option value="november">november</option>
+                <option value="december">december</option>
+              </select>
+            </div>
+
+        <!--    <div class="input_data">Pollution particules :
+                <select>
+                <option value="O3">Ozone</option>
+                <option value="NO">Nitric oxide</option>
+                <option value="NO2">Nitrogen dioxide</option>
+                <option value="NOXasNO2">Nitrogen oxides as nitrogen dioxide</option>
+                <option value="SO2">Sulphur dioxide</option>
+                <option value="CO">Carbon monoxide</option>
+                <option value="GE10">PM10 particulate matter</option>
+                <option value="NV10">Non-volatile PM10</option>
+                <option value="V10">Volatile PM10</option>
+                <option value="PM25">PM2.5 particulate matter</option>
+                <option value="NV25">Non-volatile PM2.5</option>
+                <option value="V25">Volatile PM2.5</option>
+                <option value="GR10">PM10 particulate matter</option>
+                <option value="GR25">PM2.5 particulate matter</option>
+                <option value="uGR10">Daily measured PM10</option>
+                <option value="uGR25">Daily measured PM2.5</option>
+                <option value="M_DIR">Modelled Wind Direction</option>
+                <option value="M_SPED">Modelled Wind Speed</option>
+                <option value="M_T">Modelled Temperature</option>
+              </select>
+            </div>-->
+            <button onclick="displayOnMap();">Display on map</button>
+        </form>
+      </div>
+    <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOT-JHviDXcoIgILYqVWM2Ma0J-9n7-dI&callback=initMap"></script>-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./script/papaparse.js"></script>
+      <script src="./script/main.js"></script>
+
+    </body>
+</html>

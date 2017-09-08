@@ -1,0 +1,31 @@
+
+html, body {
+    text-align: center;
+    height: 94%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+div {
+  height: 100%;
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+
+}
+#map {
+  margin-right: 2px;
+  border: 1px black solid;
+}
+
+#controls {
+  margin-left: 2px;
+  border: 1px black solid;
+}
+
+.input_data{
+  width: 100%;
+  border: none;
+  padding : 4px;
+}
